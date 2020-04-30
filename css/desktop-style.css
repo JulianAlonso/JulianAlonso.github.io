@@ -1,0 +1,99 @@
+@media (min-width: 992px) {
+
+    /*
+        HEADER
+    */
+    header div.blog-title {
+        padding-top: 2.5em;
+        padding-left: 8em;
+        padding-bottom: 2em;
+    }
+
+    header h1 {
+        font-size: 3.7em;
+    }
+
+    header h2 {
+        padding-left: 3em;
+    }
+
+    /*
+        POST
+    */
+    .post-header h1 {
+        font-size: 3.5em;
+    }
+    section.post {
+        padding: 2em 4em;
+    }
+    p.post-content {
+        color: #454645;
+    }
+
+    section.post .videoWrapper {
+        padding-bottom: 30%;
+    }
+
+    section.post .videoWrapper iframe {
+        width: 60%;
+        height: 100%;
+        top: 40%;
+        left: 40%;
+        -webkit-transform: translate(-40%, -40%);
+        transform: translate(-40%, -40%);
+    }
+
+    /*
+        AUTHORS
+    */
+    section.authors ul.author li.author-description {
+        width: 60%;
+    }
+
+    section.authors ul.author li.author-description h1 {
+        font-size: 3em;
+    }
+
+    /*
+        POST AUTHOR
+    */
+    li.post-author-description {
+        padding-left: 2em;
+        width: 60%;
+    }
+
+    section.author ul.post-author {
+        margin-bottom: 0px;
+        padding-bottom: 2em;
+        width: 80%;
+        margin: auto;
+    }
+
+    section.author h2 {
+        padding-top: 1.04em;
+        width: 80%;
+        margin: auto;
+        text-align: left;
+        padding-left: 5em;
+        padding-bottom: 0.6em;
+
+    }
+
+    /*
+        FOOTER-CONTENT
+    */
+    footer div.footer-content {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+
+    footer div.footer-content span {
+        font-size: 2em;
+    }
+
+    footer div.footer-content #name {
+        font-size: 1em;
+        padding-left: 2em;
+    }
+
+}

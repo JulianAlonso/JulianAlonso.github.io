@@ -1,0 +1,20 @@
+<section class="author">
+
+    <h2>ESCRITO POR</h2>
+
+    <ul class="post-author">
+
+        <li class="post-author-img">
+            <img src="{{ basepath }} {{ author.img }}" class="img-circle rotate" alt="{{ author.name }}" title="{{ author.name }}" />
+        </li>
+
+        <li class="post-author-description">
+            <h1> {{ author.name }} </h1>
+            <p>
+                {{ author.description | raw }}
+            </p>
+        </li>
+
+    </ul>
+
+</section>

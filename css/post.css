@@ -1,0 +1,75 @@
+section.post div.post-content p {
+    color: #454645;
+    font-size: 1.2em;
+}
+
+/*
+    SHARE
+*/
+section.share {
+    background-color: #EF655E;
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+section.share h2 {
+    color: #EEE;
+}
+
+section.share a {
+    margin-top: 30px;
+}
+
+section.share a svg {
+    width: 60px;
+    height: 60px;
+    padding: 0.8em;
+    padding-bottom: 0px;
+    fill: #EEE;
+}
+
+section.author {
+    text-align: center;
+    background-color: #EEE;
+}
+
+section.author h2 {
+    padding-top: 1.04em;
+    padding-left: 6.4em;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 0.6em;
+    font-family: "Source Sans Pro";
+}
+
+section.author ul.post-author {
+    margin-bottom: 0px;
+    padding-bottom: 2em;
+    width: 100%;
+    margin: auto;
+}
+
+section.author ul li {
+    display: inline-block;
+}
+
+li.post-author-img img {
+    width: 250px;
+    height: 250px;
+    border: 8px solid #E2504A;
+}
+
+li.post-author-description {
+    padding-top: 0px;
+}
+
+li.post-author-description h1 {
+    font-family: "Quicksand";
+    text-align: left;
+}
+
+li.post-author-description p {
+    text-align: left;
+}

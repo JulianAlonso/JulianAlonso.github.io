@@ -1,0 +1,20 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: DIARIO DE PROGRAMACIÓN
+email: julian.alonso.dev@gmail.com
+description: Diario de programación, un pequeño blog sobre mis anectotas programando, algun que otro tutorial o simples reflexiones sobre la programación.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://diariodeprogramacion.com" # the base hostname & protocol for your site
+twitter_username: maisterjuli
+github_username:  julianalonso
+twitter_text: Acabo de leer
+
+# Build settings
+markdown: kramdown
+highlighter: rouge

@@ -1,0 +1,19 @@
+div.error-code {
+    float: left;
+    text-align: center;
+    font-size: 20em;
+}
+
+div.error-message {
+    float: left;
+    height: 7em;
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    text-align: left;
+    font-size: 4em;
+    border-left: thin solid #353635;
+}
