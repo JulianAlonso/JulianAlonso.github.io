@@ -14,7 +14,7 @@ All these lines sounds like the impossible goal to archieve, but in these post s
 
 ## Proposal
 
-In this post I'll try to cover how we can create an easy project setup for an iOS app, that Scale on a **hugh** company with **big** teams.
+In this post I'll try to cover how we can create an easy project setup for an iOS app, that Scale on a **huge** company with **big** teams.
 
 To archieve this, we're going to take a project, refactor it step by step, showing up how a couple of new tools and new approaches that could help us to reduce complexity, avoid git conflicts, write less code, be cleaner, faster and of course, improve the code testability.
 
