@@ -343,7 +343,7 @@ public func perform<T: Decodable, E: Decodable>(_ endpoint: Endpoint, completion
 
 Now, we can remove `HTTPParameter.swift`, `URLQueryEncoder.swift` and `APIRequest.swift`. So our client, get's reduced to: (commit: `d0d55af`)
 
-![NetworkingState]({{ basepath }}/resources/images/posts/ios_at_scale/networking-refactor-step-1.png){: .img-rounded .img-responsive }
+![NetworkingState]({{ basepath }}/resources/images/posts/ios_at_scale/networking-refactor-step1.png){: .img-rounded .img-responsive }
 
 But we have one more thing to do. This client its actually not authenticating our requests. In order to this, we're going to add an pAuthenticationp struct, and to be more generic, a protocol to authenticate an endpoint. This protocol will follow [ guideline](https://swift.org/documentation/api-design-guidelines/) to name protocols and be named `Authorizating`.
 
@@ -582,3 +582,17 @@ Now we can mock our client with painless since its decoupled by the protocol `HT
 
 On the next chapter, we will refactor the `DataProvidersKit` to make the app work great again. Also, we're going to make dependency inversion between `Repositories`(New `ProvidersKitName`) and the `MarvelClient`. We will move the `CharacterProviding` protocol to `Repositories` module, and then, we will have the needed flexibility to perform refactors on the future, as new techniques arrive, or we need to add extra functionality.
 
+## Steps
+
+- [Introduction]({% link _posts/2020/2020-04-18-ios-at-scale-step0-introduction.md %})
+- [Xcode at Scale]({% link _posts/2020/2020-04-18-ios-at-scale-step1-remove-xcode-conflicts.md %})
+- [Refactor MarvelClient - split client from logic]({% link _posts/2020/2020-04-18-ios-at-scale-step2-refactor-marvel-client.md %})
+- [Refactor DataProvidersKit - applying Iversion of Control]({% link _posts/2020/2020-04-18-ios-at-scale-step3-refactor-data-providers-kit.md %})
+- [Refactor DetailKit - Single data flow, states, type erasure and more]({% link _posts/2020/2020-04-18-ios-at-scale-step4-single-data-flow.md %})
+- [Refactor Navigator - Back to simplest]({% link _posts/2020/2020-04-18-ios-at-scale-step5-refactor-navigator-kit.md %})
+- [Refactor AppCore - we really need it?]({% link _posts/2020/2020-04-18-ios-at-scale-step6-app-core-module.md %})
+- [Dependency Injection - flexible and composable]({% link _posts/2020/2020-04-18-ios-at-scale-step7-dependency-injection.md %})
+- [Extra ball: Cache made easy]({% link _posts/2020/2020-04-18-ios-at-scale-step8-cache-made-easy.md %})
+- [Extra ball: Introducing to Promises 1]({% link _posts/2020/2020-04-18-ios-at-scale-step9-introduce-promises.md %})
+- [Extra ball: Introducing to Promises 2]({% link _posts/2020/2020-04-18-ios-at-scale-step10-refactor-promises.md %})
+- [Final conclusions]({% link _posts/2020/2020-04-18-ios-at-scale-step11-conclusions.md %})

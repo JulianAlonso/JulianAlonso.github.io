@@ -232,7 +232,7 @@ Inclusive now, we can even remove the `NavigationKit` dependency from the `Featu
 
 This way we have our features even more decoupled of the `NavigatorKit` component. But I like to see the `Screen` definition under the `ModuleBuilder`, because we're going to have a 1:1 relation from `ModuleBuilder` to `Screen`. So if we find one `ModuleBuilder` without Screen definition, maybe it's a signal that we lost something.
 
-## Conclusions
+## Conclusions
 
 In this chaper we've reduced the complexity subyacent to the `Assemblies`. Not because having `Factories` with `ServiceLocator` it's a bad pattern. Because them was based on many protocols, without structure inside them and was making very hard to read the depedency graph.
 
@@ -246,3 +246,17 @@ I introduced `Injection`, but you can use other library, on simply use Service L
 
 If you want to give a try to `Injection`, I encorage you to it. You can group your factories by modules also, define those modules where you want, combine and share them. With `MdouleBuilders` you'll have factories to build your screens with needed dependencies, and you can create as many Modules as you need. Since Components are not other thing than an array of functions, they will not use to much memory beign variables out of scope as we already saw here. Modules are where factories functions are mutated to objects if needed, this will happen only on `single` (until new type of factories arrive), the instance factory `factory` it's an struct with the function to build the instance, so really it won't use so much memory neither.
 
+## Steps
+
+- [Introduction]({% link _posts/2020/2020-04-18-ios-at-scale-step0-introduction.md %})
+- [Xcode at Scale]({% link _posts/2020/2020-04-18-ios-at-scale-step1-remove-xcode-conflicts.md %})
+- [Refactor MarvelClient - split client from logic]({% link _posts/2020/2020-04-18-ios-at-scale-step2-refactor-marvel-client.md %})
+- [Refactor DataProvidersKit - applying Iversion of Control]({% link _posts/2020/2020-04-18-ios-at-scale-step3-refactor-data-providers-kit.md %})
+- [Refactor DetailKit - Single data flow, states, type erasure and more]({% link _posts/2020/2020-04-18-ios-at-scale-step4-single-data-flow.md %})
+- [Refactor Navigator - Back to simplest]({% link _posts/2020/2020-04-18-ios-at-scale-step5-refactor-navigator-kit.md %})
+- [Refactor AppCore - we really need it?]({% link _posts/2020/2020-04-18-ios-at-scale-step6-app-core-module.md %})
+- [Dependency Injection - flexible and composable]({% link _posts/2020/2020-04-18-ios-at-scale-step7-dependency-injection.md %})
+- [Extra ball: Cache made easy]({% link _posts/2020/2020-04-18-ios-at-scale-step8-cache-made-easy.md %})
+- [Extra ball: Introducing to Promises 1]({% link _posts/2020/2020-04-18-ios-at-scale-step9-introduce-promises.md %})
+- [Extra ball: Introducing to Promises 2]({% link _posts/2020/2020-04-18-ios-at-scale-step10-refactor-promises.md %})
+- [Final conclusions]({% link _posts/2020/2020-04-18-ios-at-scale-step11-conclusions.md %})
