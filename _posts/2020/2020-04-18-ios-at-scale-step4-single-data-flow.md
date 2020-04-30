@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS at Scale, Step 4 - Refactor DataProvidersKit - Aplying Inversion of Control
+title: Xcode at scale - Refactor Detail kit - Single data flow, states, type erasure and more
 author: juli
 ---
 
@@ -12,7 +12,7 @@ This is the fifth step of a serie named **iOS at Scale** based on the next steps
 - [Refactor DetailKit - Single data flow, states, type erasure and more]({% link _posts/2020/2020-04-18-ios-at-scale-step4-single-data-flow.md %})
 - [Refactor Navigator - Back to simplest]({% link _posts/2020/2020-04-18-ios-at-scale-step5-refactor-navigator-kit.md %})
 - [Refactor AppCore - we really need it?]({% link _posts/2020/2020-04-18-ios-at-scale-step6-app-core-module.md %})
-- [Dependency Injection - flexible and composible]({% link _posts/2020/2020-04-18-ios-at-scale-step7-dependency-injection.md %})
+- [Dependency Injection - flexible and composable]({% link _posts/2020/2020-04-18-ios-at-scale-step7-dependency-injection.md %})
 - [Extra ball: Cache made easy]({% link _posts/2020/2020-04-18-ios-at-scale-step8-cache-made-easy.md %})
 - [Extra ball: Introducing to Promises 1]({% link _posts/2020/2020-04-18-ios-at-scale-step9-introduce-promises.md %})
 - [Extra ball: Introducing to Promises 2]({% link _posts/2020/2020-04-18-ios-at-scale-step10-refactor-promises.md %})

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS at Scale, step 10 - Introducing Promises 2
+title: Xcode at scale - Introducing to promises 2 - Refactor to use them
 author: juli
 ---
 This is the eleventh step of a serie named **iOS at Scale** based on the next steps:
@@ -11,7 +11,7 @@ This is the eleventh step of a serie named **iOS at Scale** based on the next st
 - [Refactor DetailKit - Single data flow, states, type erasure and more]({% link _posts/2020/2020-04-18-ios-at-scale-step4-single-data-flow.md %})
 - [Refactor Navigator - Back to simplest]({% link _posts/2020/2020-04-18-ios-at-scale-step5-refactor-navigator-kit.md %})
 - [Refactor AppCore - we really need it?]({% link _posts/2020/2020-04-18-ios-at-scale-step6-app-core-module.md %})
-- [Dependency Injection - flexible and composible]({% link _posts/2020/2020-04-18-ios-at-scale-step7-dependency-injection.md %})
+- [Dependency Injection - flexible and composable]({% link _posts/2020/2020-04-18-ios-at-scale-step7-dependency-injection.md %})
 - [Extra ball: Cache made easy]({% link _posts/2020/2020-04-18-ios-at-scale-step8-cache-made-easy.md %})
 - [Extra ball: Introducing to Promises 1]({% link _posts/2020/2020-04-18-ios-at-scale-step9-introduce-promises.md %})
 - [Extra ball: Introducing to Promises 2]({% link _posts/2020/2020-04-18-ios-at-scale-step10-refactor-promises.md %})

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS at scale
+title: iOS at scale - Introduction
 author: juli
 ---
 
@@ -18,7 +18,7 @@ In this post I'll try to cover how we can create an easy project setup for an iO
 
 To archieve this, we're going to take a project, refactor it step by step, showing up how a couple of new tools and new approaches that could help us to reduce complexity, avoid git conflicts, write less code, be cleaner, faster and of course, improve the code testability.
 
-Also I'm going to introcue a little concepts of functional programming, trying to make us lose the fear about [FPP](https://www.geeksforgeeks.org/functional-programming-paradigm/), and how these modern approaches could make our more composible and flexible.
+Also I'm going to introcue a little concepts of functional programming, trying to make us lose the fear about [FPP](https://www.geeksforgeeks.org/functional-programming-paradigm/), and how these modern approaches could make our more composable and flexible.
 
 To do this, I'm going to try avoid the usage of many external libraries as I can, explaining on every point what I'm doing and why, and why I guess it's a good choice to scale a project. This not only may help you on big projects, but also may help on projects with one or two developers. Remember that always is a good option keep your project and code as Simple as posible.
 
@@ -47,7 +47,7 @@ Take into account that this is an opinionated refactor, based on my previous exp
 - [Refactor DetailKit - Single data flow, states, type erasure and more]({% link _posts/2020/2020-04-18-ios-at-scale-step4-single-data-flow.md %})
 - [Refactor Navigator - Back to simplest]({% link _posts/2020/2020-04-18-ios-at-scale-step5-refactor-navigator-kit.md %})
 - [Refactor AppCore - we really need it?]({% link _posts/2020/2020-04-18-ios-at-scale-step6-app-core-module.md %})
-- [Dependency Injection - flexible and composible]({% link _posts/2020/2020-04-18-ios-at-scale-step7-dependency-injection.md %})
+- [Dependency Injection - flexible and composable]({% link _posts/2020/2020-04-18-ios-at-scale-step7-dependency-injection.md %})
 - [Extra ball: Cache made easy]({% link _posts/2020/2020-04-18-ios-at-scale-step8-cache-made-easy.md %})
 - [Extra ball: Introducing to Promises 1]({% link _posts/2020/2020-04-18-ios-at-scale-step9-introduce-promises.md %})
 - [Extra ball: Introducing to Promises 2]({% link _posts/2020/2020-04-18-ios-at-scale-step10-refactor-promises.md %})
