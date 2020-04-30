@@ -18,3 +18,4 @@ twitter_text: Acabo de leer
 # Build settings
 markdown: kramdown
 highlighter: rouge
+paginate: 5

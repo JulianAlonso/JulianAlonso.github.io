@@ -3,37 +3,57 @@ layout: default
 ---
 
 <section class="container">
-
+    
     <section class="post">
 
-            {% for post in site.posts %}
-                <section class="post">
+        {% for post in paginator.posts %}
 
-                    <div class="post-header">
-                        <a href="{{post.url}}" class="noeffect">
-                            <h1> {{ post.title }} </h1>
-                        </a>
-                    </div>
+            <div class="post-header">
+                <a href="{{post.url}}" class="noeffect">
+                    <h1> {{ post.title }} </h1>
+                </a>
+            </div>
 
-                    <div class="post-description">
+            <div class="post-description">
 
-                        <div class="post-content">
+                <div class="post-content">
 
-                            {{ post.excerpt }}
+                    {{ post.excerpt }}
 
-                        </div>
+                </div>
 
-                    </div>
-                    <div class="read-more">
-                        <a href="{{post.url}}" class="noeffect">
-                            <span>SEGUIR LEYENDO <span class="glyphicon glyphicon-chevron-right rotate" aria-hidden="true"></span> </span>
-                        </a>
-                    </div>
-                </section>
-            {% endfor %}
+            </div>
+            <div class="read-more">
+                <a href="{{post.url}}" class="noeffect">
+                    <span>Keep reading <span class="glyphicon glyphicon-chevron-right rotate" aria-hidden="true"></span> </span>
+                </a>
+            </div>
+        {% endfor %}
+
+        <br/>
+        <br/>
+        <br/>
+
+        
+        <div class="pagination">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="previous">
+                Previous
+                </a>
+            {% else %}
+                <span class="previous">Previous</span>
+            {% endif %}
+            <span class="page_number ">
+                Page: {{ paginator.page }} of {{ paginator.total_pages }}
+            </span>
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+            {% else %}
+                <span class="next ">Next</span>
+            {% endif %}
+        </div>
 
     </section>
-
 </section>
 
 {% include author.html %}
