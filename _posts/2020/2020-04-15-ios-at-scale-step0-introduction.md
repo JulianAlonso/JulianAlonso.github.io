@@ -28,7 +28,7 @@ Note that the tools that I'm going to use here are not the uniques on it's `scop
 
 With the quantity of information on internet, nowadays could be hard for us find what it's a good solution or not. We've find a lot of "you must do this" or "you must do that", "you're coupling that part" or whatever, but isn't usual to find out a post series that given a project performs a refactor and justify **every choice taken about how and why**.
 
-This post series has born with the idea of cover up how a project based on minimum verision on `iOS 10`, could scale, avoiding the most usual problems on big and not so big teams, how we can make our life as developers easier, our code more flexible to change without not so much effort, and cover how new techniques help us coding.
+This post series has born with the idea of cover up how a project based on minimum version on `iOS 10`, could scale, avoiding the most usual problems on big and not so big teams, how we can make our life as developers easier, our code more flexible to change without not so much effort, and cover how new techniques help us coding.
 
 We've going to start on a [project](https://github.com/JulianAlonso/excelsior) provided by [Rafael Bartolome](https://twitter.com/RafaelBartolome) where we have a very good start point, due that the project it's talking about iOS at Scale, and we will discover post by post, step by step, commit by commit, why this project could scale even better and why.
 

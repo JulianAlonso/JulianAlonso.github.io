@@ -21,7 +21,7 @@ This is the sixth step of a serie named **iOS at Scale** based on the next steps
 
 The Navigator component proposed by [Job & Talent ingeenering team]() it's a piece I've falled in love with it sice I've read the post.
 
-This component handles the navigation of the app easy. It simplifies how our app navigates in a very easy way, having a bunch of options of navigation expressed by an `enum`, that allow us to use the dot notation. (`.push(.screen)`) (nontation that I love).
+This component handles the navigation of the app easy. It simplifies how our app navigates in a very easy way, having a bunch of options of navigation expressed by an `enum`, that allow us to use the dot notation. (`.push(.screen)`) (notation that I love).
 
 I guess the simplicity of the component it's the main key feature. It allow us to perform all the possibles navigations while keeps the navigation centralized on one single component, and we're abstracted about how it's performed and the stack. This component could be extended as many as we can, since we only need to make more navigation options.
 
