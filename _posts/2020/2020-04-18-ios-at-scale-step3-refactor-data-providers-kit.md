@@ -254,7 +254,7 @@ Now our app it's compiling again. Let's rename `DataProvidersKit`
 
 Since we're using [Tuist](www.tuist.io), rename a Module, is quite simple. Let's change the folder name, the name inside the `Project.swift`, and then update dependencies. (commit: `23680f2`)
 
-## Aplying Inversion Of Control
+## Applying Inversion Of Control
 
 Inversion of Control it's a way to avoid coupling our `Core` to our Modules/Libraries, instead of that, our modules will depend on our `Core`, this way, will be the `Core` the responsible of expose those protocols that the other libraries must conform. Giving us the ability to replace those libraries with painless, due that our application code doesn't need to change anything.
 

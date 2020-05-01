@@ -37,7 +37,7 @@ Like we've seen on previous post, on of the main sources on pain of the code bas
 
 So let's update the project to use [Injection](https://github.com/julianalonso/injection).
 
-## Refactor how Dependency Injection it's done
+## Refactor how Dependency Injection it's done
 
 Move to step-6 tag on git.
 
