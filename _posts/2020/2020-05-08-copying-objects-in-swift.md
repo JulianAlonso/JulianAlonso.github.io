@@ -40,7 +40,7 @@ struct User {
 
     func older(by years: Int) -> User {
         //this doesn't work
-        copy(age, age + years)
+        copy(age = age + years)
     }
 }
 
@@ -65,7 +65,7 @@ extension User {
 }
 ```
 
-The main key point of this, is that we are mutating the value, but as you can see, we don't have the function as `mutating`. Because the value that we mutate it's a copy instead of the original object. This way we can avoid side effects, caused by mutate an object that it's inside another object. We should try to make as many pure functions as we can. We avoid side effects, mutate things without know what we're doing and those functions are easier to test, easier to read because we don't need to go out of the scope of the function to see whats happening...
+The main key point of this, is that we are mutating the value, but as you can see, we don't have the function as `mutating`. Because the value that we mutate it's a copy instead of the original object. This way we can avoid side effects, caused by mutate an object that it's inside another object. We should try to make as many pure functions as we can. We avoid mutate things without know what we're doing and these functions are easier to test and easier to read since we don't need to go out of the scope of the function to see whats happening...
 
 Back to the last example, we have the same function as kotlin has and the `older` function working, but we have to write a lot of boilerplate code, each time we want have it available inside one object. We could use [sourcery](https://github.com/krzysztofzablocki/Sourcery) to generate this kind of functions automatically, but this time, I want to make a protocol, with the goal of only implementing it, we can do this kind of operation over any `struct`.
 
@@ -148,7 +148,7 @@ struct User: Copyable {
 
 Like `+` it's a function that takes two values with the same type and returns the new one, we don't need to create the closure and add the values inside, the clousure will be the add function itself.
 
-The last trick is the one with the highest price. If we make our structs properties vars, without `private(set)`, we could use the `adding` or `replacing` functions outside the struct object. The prive will be the ability to mutate the properties without using our protocol functions always that our object be mutable. This could lead us to have some problems (that some times we can fix).
+The last trick is the one with the highest price. If we make our structs properties vars, without `private(set)`, we could use the `adding` or `replacing` functions outside the struct object. The price will be the ability to mutate the properties without using our protocol functions always that our object be mutable. This could lead us to have some problems (that some times we can fix).
 
 Let's supose we have the next ViewModel with an `State`:
 
