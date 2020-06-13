@@ -37,7 +37,7 @@ let validatePhone: (String) -> Bool = phone {
 
 ```
 
-This two functions will return us a boolean if the String is a valid email or phone, obviously this validations are dumb examples.
+These two functions will return us a boolean if the String is a valid email or phone, obviously this validations are dumb examples.
 
 But now, would be better if we have that funtions wrapped inside an object that validates. So let's create an object that will validate a value.
 
@@ -252,7 +252,7 @@ enum UserValidationError {
 }
 
 extension Validator where Value == User, Error = UserValidationError {
-    static let userValidator = Validator<User, UserValidationError>.combine(
+    static let userValidator = Validator<User, UserValidationError>.cmpose(
         path(\.email, .emailValidator, mapError: { .invalidEmail($0) }),
         path(\.phone, .phoneValidator, mapError: { .invalidPhone($0) })
     )
