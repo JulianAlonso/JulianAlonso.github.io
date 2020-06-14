@@ -29,7 +29,7 @@ let validateEmail: (String) -> Bool = { email in
     email.contains("@")
 }
 
-let validatePhone: (String) -> Bool = phone {
+let validatePhone: (String) -> Bool = { phone in
     let numberSet = CharacterSet(charactersIn: "0123456789")
     let phoneSet = CharacterSet(charactersIn: phone)
     return phone.count == 9 && phoneSet.isSubset(of: numberSet)
@@ -83,7 +83,7 @@ Our validator it's a type. It's a type that wraps a function, and thanks to that
 extension Validator {
     static func compose(first: Validator<Value>, second: Validator<Value>) -> Validator<Value> {
         Validator<Value> { value in
-            first(value) && second(value)
+            first.validate(value) && second.validate(value)
         }
     }
 }
@@ -252,14 +252,14 @@ enum UserValidationError {
 }
 
 extension Validator where Value == User, Error = UserValidationError {
-    static let userValidator = Validator<User, UserValidationError>.cmpose(
+    static let userValidator = Validator<User, UserValidationError>.compose(
         path(\.email, .emailValidator, mapError: { .invalidEmail($0) }),
         path(\.phone, .phoneValidator, mapError: { .invalidPhone($0) })
     )
 }
 ```
 
-And now, we can see what path it's failing, and what it's the failure of the path. As the map error it's a simple function that given one error returns a new error type, the possibilities of that mapping are endless. For example, if we only want to show to the user a message, our `StringValidationError` could have a `failulreReason: String` with a message like "Can't be empty", and we can compose the messages to do something like `mapError: { .invalidEmail("email \($0.failureReason") }, or whatever.
+And now, we can see what path it's failing, and what it's the failure of the path. As the map error it's a simple function that given one error returns a new error type, the possibilities of that mapping are endless. For example, if we only want to show to the user a message, our `StringValidationError` could have a `failulreReason: String` with a message like "Can't be empty", and we can compose the messages to do something like `mapError: { .invalidEmail("email \($0.failureReason") }`, or whatever.
 
 ## Conclusions
 
