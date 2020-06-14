@@ -122,9 +122,9 @@ extension Validator where Value == String {
 }
 ```
 
-As you may see, we're creating very simples validators with one rule and then composing as many rules as we want to create more complex validators, but at this moment, we have one problem, we can't know if the validation fails what is the failing rule.
+As you may see, we're creating very simple validators with one rule and then composing as many rules as we want to create more complex validators, but at this moment, we have one problem, we can't know if the validation fails what is the failing rule.
 
-Very inspired on the [point free validated](https://github.com/pointfreeco/swift-validated) I took the `Validated` obect to handle the validated value or the validation error if it fails, but with a little difference, I like that if a validation fails, only return the first error, not all. Because I (this is very personal opinion) don't like that forms that you start to input one value and all the form starts failing.
+Very inspired on the [point free validated](https://github.com/pointfreeco/swift-validated) I took the `Validated` object to handle the validated value or the validation error if it fails, but with a little difference, I like that if a validation fails, only return the first error, not all. Because I (this is very personal opinion) don't like that forms that you start to input one value and all the form starts failing.
 
 So, let's create the Validated object and the adapt our validator to use it.
 
